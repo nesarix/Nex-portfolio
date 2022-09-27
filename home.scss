@@ -1,7 +1,50 @@
+body {
+	background-color: black;
+	color: white;
+}
+
 .nav-bar {
-    &__list {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 5%;
+		margin-top: 15vh;
+	}
+	&__link {
+		text-decoration: none;
+		padding: 20px;
+		border-radius: 25px;
+
+		&:hover {
+			padding: 50px;
+		}
+		&--home {
+			background-color: rgb(133, 96, 132);
+		}
+		&--contact {
+			background-color: rgb(133, 96, 132);
+		}
+		&--projects {
+			background-color: rgb(133, 96, 132);
+		}
+	}
+}
+.landing {
+	width: 30%;
+	height: 30%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	border-radius: 25px;
+	padding: 20px;
+	margin-left: 50px;
+	background-color: rgb(132, 226, 150);
+	margin-bottom: 50px;
+	&__title {
+		justify-content: left;
+	}
+	&__para {
+		justify-content: left;
+	}
 }
