@@ -1,0 +1,10 @@
+@use "./palette";
+
+@mixin bubble($backdrop-color, $size-width, $size-hight) {
+	background-color: $backdrop-color;
+	width: $size-width;
+	height: $size-hight;
+	border-radius: 25px;
+}
+@mixin flex-yes() {
+}

@@ -15,6 +15,9 @@ body {
   padding: 20px;
   border-radius: 25px;
 }
+.nav-bar__link:visited {
+  color: inherit;
+}
 .nav-bar__link:hover {
   padding: 50px;
 }
@@ -28,21 +31,35 @@ body {
   background-color: rgb(133, 96, 132);
 }
 
-.landing {
+.info {
+  background-color: rgb(132, 226, 150);
   width: 30%;
   height: 30%;
+  border-radius: 25px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  border-radius: 25px;
   padding: 20px;
   margin-left: 50px;
-  background-color: rgb(132, 226, 150);
   margin-bottom: 50px;
 }
-.landing__title {
+.info__title {
   justify-content: left;
 }
-.landing__para {
+.info__para {
   justify-content: left;
+}
+
+.project-one {
+  background-color: rgb(132, 226, 150);
+  width: 50%;
+  height: 20%;
+  border-radius: 25px;
+}
+
+.project-two {
+  background-color: rgb(132, 226, 150);
+  width: 50%;
+  height: 20%;
+  border-radius: 25px;
 }

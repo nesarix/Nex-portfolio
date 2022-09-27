@@ -1,3 +1,6 @@
+@use "./partials/palette";
+@use "./partials/mixins";
+
 body {
 	background-color: black;
 	color: white;
@@ -16,30 +19,34 @@ body {
 		padding: 20px;
 		border-radius: 25px;
 
+		&:visited {
+			color: inherit;
+		}
 		&:hover {
 			padding: 50px;
 		}
 		&--home {
-			background-color: rgb(133, 96, 132);
+			background-color: palette.$prim-purple;
 		}
 		&--contact {
-			background-color: rgb(133, 96, 132);
+			background-color: palette.$prim-purple;
 		}
 		&--projects {
-			background-color: rgb(133, 96, 132);
+			background-color: palette.$prim-purple;
 		}
 	}
 }
-.landing {
-	width: 30%;
-	height: 30%;
+.info {
+	@include mixins.bubble(palette.$prim-green, 30%, 30%);
+	//width: 30%;
+	//height: 30%;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
-	border-radius: 25px;
+	//border-radius: 25px;
 	padding: 20px;
 	margin-left: 50px;
-	background-color: rgb(132, 226, 150);
+	//background-color: palette.$prim-green;
 	margin-bottom: 50px;
 	&__title {
 		justify-content: left;
@@ -47,4 +54,11 @@ body {
 	&__para {
 		justify-content: left;
 	}
+}
+.project-one {
+	@include mixins.bubble(palette.$prim-green, 50%, 20%);
+}
+
+.project-two {
+	@include mixins.bubble(palette.$prim-green, 50%, 20%);
 }
