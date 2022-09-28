@@ -22,7 +22,7 @@ body {
   color: inherit;
 }
 .nav-bar__link:hover {
-  padding: 50px;
+  padding: 5vw;
 }
 .nav-bar__link--home, .nav-bar__link--projects, .nav-bar__link--contact {
   background-color: rgb(133, 96, 132);
@@ -41,7 +41,7 @@ body {
   margin: 0px 0px 5vh 5vw;
 }
 
-.skills-section, .project-three, .project-two, .project-one {
+.skills-section, .contact__email-image, .contact__linkedin-image, .contact__github-image, .project-three, .project-two, .project-one {
   background-color: rgb(132, 226, 150);
   width: 80%;
   height: 80%;
@@ -53,4 +53,9 @@ body {
   flex-wrap: nowrap;
   padding: 5vw;
   margin: 5vh 0px 5vh 5vw;
+}
+
+.contact__github-image--size, .contact__email-image--size, .contact__linkedin-image--size {
+  height: 10vh;
+  width: auto;
 }

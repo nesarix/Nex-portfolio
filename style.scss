@@ -1,5 +1,6 @@
 @use "./partials/palette";
 @use "./partials/mixins";
+@use "./partials/typography";
 
 body {
 	background-color: black;
@@ -21,7 +22,7 @@ body {
 			color: inherit;
 		}
 		&:hover {
-			padding: 50px;
+			padding: 5vw;
 		}
 		&--home {
 			background-color: palette.$prim-purple;
@@ -54,4 +55,26 @@ body {
 
 .project-three {
 	@extend .skills-section;
+}
+
+.contact {
+	&__github-image {
+		@extend .skills-section;
+		&--size {
+			height: typography.$icon-hight;
+			width: typography.$icon-width;
+		}
+	}
+	&__linkedin-image {
+		@extend .skills-section;
+		&--size {
+			@extend .contact__github-image--size;
+		}
+	}
+	&__email-image {
+		@extend .skills-section;
+		&--size {
+			@extend .contact__github-image--size;
+		}
+	}
 }
