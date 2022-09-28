@@ -1,14 +1,17 @@
 body {
   background-color: black;
-  color: white;
+  color: black;
 }
 
 .nav-bar__list {
   list-style: none;
+  padding: 5%;
+  margin: 0;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5%;
-  margin-top: 15vh;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .nav-bar__link {
   text-decoration: none;
@@ -21,45 +24,33 @@ body {
 .nav-bar__link:hover {
   padding: 50px;
 }
-.nav-bar__link--home {
+.nav-bar__link--home, .nav-bar__link--projects, .nav-bar__link--contact {
   background-color: rgb(133, 96, 132);
 }
-.nav-bar__link--contact {
-  background-color: rgb(133, 96, 132);
-}
-.nav-bar__link--projects {
-  background-color: rgb(133, 96, 132);
-}
-
 .info {
   background-color: rgb(132, 226, 150);
   width: 30%;
   height: 30%;
   border-radius: 25px;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: none;
   flex-direction: column;
-  padding: 20px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-}
-.info__title {
-  justify-content: left;
-}
-.info__para {
-  justify-content: left;
+  flex-wrap: nowrap;
+  padding: 5vw;
+  margin: 0px 0px 5vh 5vw;
 }
 
-.project-one {
+.skills-section, .project-three, .project-two, .project-one {
   background-color: rgb(132, 226, 150);
-  width: 50%;
-  height: 20%;
+  width: 80%;
+  height: 80%;
   border-radius: 25px;
-}
-
-.project-two {
-  background-color: rgb(132, 226, 150);
-  width: 50%;
-  height: 20%;
-  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 5vw;
+  margin: 5vh 0px 5vh 5vw;
 }
