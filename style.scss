@@ -3,16 +3,14 @@
 
 body {
 	background-color: black;
-	color: white;
+	color: black;
 }
 
 .nav-bar {
 	&__list {
 		list-style: none;
-		display: flex;
-		justify-content: space-around;
-		margin-bottom: 5%;
-		margin-top: 15vh;
+		@include mixins.pad-marg(5%, 0);
+		@include mixins.flex-yes(flex, space-around, center, row, wrap);
 	}
 	&__link {
 		text-decoration: none;
@@ -29,36 +27,31 @@ body {
 			background-color: palette.$prim-purple;
 		}
 		&--contact {
-			background-color: palette.$prim-purple;
+			@extend .nav-bar__link--home;
 		}
 		&--projects {
-			background-color: palette.$prim-purple;
+			@extend .nav-bar__link--home;
 		}
 	}
 }
 .info {
 	@include mixins.bubble(palette.$prim-green, 30%, 30%);
-	//width: 30%;
-	//height: 30%;
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: column;
-	//border-radius: 25px;
-	padding: 20px;
-	margin-left: 50px;
-	//background-color: palette.$prim-green;
-	margin-bottom: 50px;
-	&__title {
-		justify-content: left;
-	}
-	&__para {
-		justify-content: left;
-	}
+	@include mixins.flex-yes(flex, left, none, column, nowrap);
+	@include mixins.pad-marg(5vw, 0px 0px 5vh 5vw);
+}
+.skills-section {
+	@include mixins.bubble(palette.$prim-green, 80%, 80%);
+	@include mixins.flex-yes(flex, space-around, center, column, nowrap);
+	@include mixins.pad-marg(5vw, 5vh 0px 5vh 5vw);
 }
 .project-one {
-	@include mixins.bubble(palette.$prim-green, 50%, 20%);
+	@extend .skills-section;
 }
 
 .project-two {
-	@include mixins.bubble(palette.$prim-green, 50%, 20%);
+	@extend .skills-section;
+}
+
+.project-three {
+	@extend .skills-section;
 }

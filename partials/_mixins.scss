@@ -6,5 +6,14 @@
 	height: $size-hight;
 	border-radius: 25px;
 }
-@mixin flex-yes() {
+@mixin flex-yes($disp: flex, $justify-c, $align-itm, $flex-dr, $flex-wr) {
+	display: $disp;
+	justify-content: $justify-c;
+	align-items: $align-itm;
+	flex-direction: $flex-dr;
+	flex-wrap: $flex-wr;
+}
+@mixin pad-marg($pad, $marg) {
+	padding: $pad;
+	margin: $marg;
 }
