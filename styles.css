@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(40, 36, 36);
+  background-color: rgb(50, 54, 65);
   color: black;
 }
 
 .nav-bar__list {
   list-style: none;
   padding: 5%;
-  margin: 0;
+  margin: 0%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,22 +15,29 @@ body {
 }
 .nav-bar__link {
   text-decoration: none;
-  padding: 20px;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 40%;
+  border: 1% solid rgb(133, 96, 132);
+  box-shadow: 0 0 10px rgb(113, 48, 111);
+  color: rgb(0, 166, 255);
+  cursor: pointer;
+  transition: 0.2s;
 }
 .nav-bar__link:visited {
-  color: inherit;
+  color: black;
 }
 .nav-bar__link:hover {
-  padding: 5vw;
+  transform: scale(150%);
+  padding: 20px;
+  box-shadow: 0 0 25px rgb(113, 48, 111);
 }
 .nav-bar__link--home, .nav-bar__link--projects, .nav-bar__link--contact {
   background-color: rgb(133, 96, 132);
 }
 .info {
   background-color: rgb(132, 226, 150);
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   border-radius: 25px;
   display: flex;
   justify-content: left;
@@ -41,7 +48,7 @@ body {
   margin: 0px 0px 5vh 5vw;
 }
 
-.skills-section, .contact__email-image, .contact__linkedin-image, .contact__github-image, .project-three, .project-two, .project-one {
+.skills-section, .contact__linkedin-image, .contact__github-image, .project-three, .project-two, .project-one {
   background-color: rgb(132, 226, 150);
   width: 80%;
   height: 80%;
@@ -55,7 +62,7 @@ body {
   margin: 5vh 0px 5vh 5vw;
 }
 
-.contact__github-image--size, .contact__email-image--size, .contact__linkedin-image--size {
+.contact__github-image--size, .contact__linkedin-image--size {
   height: 10vh;
   width: auto;
 }

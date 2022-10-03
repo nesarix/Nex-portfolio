@@ -3,26 +3,33 @@
 @use "./partials/typography";
 
 body {
-	background-color: rgb(40, 36, 36);
+	background-color: palette.$bgPrim;
 	color: black;
 }
 
 .nav-bar {
 	&__list {
 		list-style: none;
-		@include mixins.pad-marg(5%, 0);
-		@include mixins.flex-yes(flex, space-around, center, row, wrap);
+		@include mixins.pad-marg(5%, 0%);
+		@include mixins.flex-big(flex, space-around, center, row, wrap);
 	}
 	&__link {
 		text-decoration: none;
-		padding: 20px;
-		border-radius: 25px;
+		padding: 10px;
+		border-radius: 40%;
+		border: 1% solid palette.$prim-purple;
+		box-shadow: 0 0 10px palette.$sec-purple;
+		color: rgb(0, 166, 255);
+		cursor: pointer;
+		transition: 0.2s;
 
 		&:visited {
-			color: inherit;
+			color: black;
 		}
 		&:hover {
-			padding: 5vw;
+			transform: scale(150%);
+			padding: 20px;
+			box-shadow: 0 0 25px palette.$sec-purple;
 		}
 		&--home {
 			background-color: palette.$prim-purple;
@@ -37,14 +44,14 @@ body {
 }
 
 .info {
-	@include mixins.bubble(palette.$prim-green, 30%, 30%);
+	@include mixins.bubble(palette.$prim-green, 40%, 40%);
 
-	@include mixins.flex-yes(flex, left, none, column, nowrap);
+	@include mixins.flex-big(flex, left, none, column, nowrap);
 	@include mixins.pad-marg(5vw, 0px 0px 5vh 5vw);
 }
 .skills-section {
 	@include mixins.bubble(palette.$prim-green, 80%, 80%);
-	@include mixins.flex-yes(flex, space-around, center, column, nowrap);
+	@include mixins.flex-big(flex, space-around, center, column, nowrap);
 	@include mixins.pad-marg(5vw, 5vh 0px 5vh 5vw);
 }
 .project-one {
@@ -73,10 +80,10 @@ body {
 			@extend .contact__github-image--size;
 		}
 	}
-	&__email-image {
-		@extend .skills-section;
-		&--size {
-			@extend .contact__github-image--size;
-		}
-	}
+	// &__email-image {
+	// 	@extend .skills-section;
+	// 	&--size {
+	// 		@extend .contact__github-image--size;
+	// 	}
+	// }
 }
