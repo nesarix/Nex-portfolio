@@ -3,7 +3,7 @@
 @use "./partials/typography";
 
 body {
-	background-color: black;
+	background-color: rgb(40, 36, 36);
 	color: black;
 }
 
@@ -35,8 +35,10 @@ body {
 		}
 	}
 }
+
 .info {
 	@include mixins.bubble(palette.$prim-green, 30%, 30%);
+
 	@include mixins.flex-yes(flex, left, none, column, nowrap);
 	@include mixins.pad-marg(5vw, 0px 0px 5vh 5vw);
 }
