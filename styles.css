@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(50, 54, 65);
+  background-color: rgb(12, 65, 55);
   color: black;
 }
 
@@ -17,8 +17,8 @@ body {
   text-decoration: none;
   padding: 10px;
   border-radius: 40%;
-  border: 1% solid rgb(133, 96, 132);
-  box-shadow: 0 0 10px rgb(113, 48, 111);
+  border: 1% solid rgb(194, 135, 91);
+  box-shadow: 0 0 10px rgb(189, 106, 74);
   color: rgb(0, 166, 255);
   cursor: pointer;
   transition: 0.2s;
@@ -29,16 +29,17 @@ body {
 .nav-bar__link:hover {
   transform: scale(150%);
   padding: 20px;
-  box-shadow: 0 0 25px rgb(113, 48, 111);
+  box-shadow: 0 0 25px rgb(189, 106, 74);
 }
 .nav-bar__link--home, .nav-bar__link--projects, .nav-bar__link--contact {
-  background-color: rgb(133, 96, 132);
+  background-color: rgb(194, 135, 91);
 }
 .info {
-  background-color: rgb(132, 226, 150);
+  background-color: rgb(69, 125, 110);
   width: 40%;
   height: 40%;
   border-radius: 25px;
+  border: 2px solid rgb(189, 106, 74);
   display: flex;
   justify-content: left;
   align-items: none;
@@ -49,10 +50,11 @@ body {
 }
 
 .skills-section, .contact__linkedin-image, .contact__github-image, .project-three, .project-two, .project-one {
-  background-color: rgb(132, 226, 150);
+  background-color: rgb(69, 125, 110);
   width: 80%;
   height: 80%;
   border-radius: 25px;
+  border: 2px solid rgb(189, 106, 74);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -65,4 +67,13 @@ body {
 .contact__github-image--size, .contact__linkedin-image--size {
   height: 10vh;
   width: auto;
+}
+.fake-os-image {
+  height: 55%;
+  width: 55%;
+}
+
+.morse-img {
+  height: 70%;
+  width: 60%;
 }

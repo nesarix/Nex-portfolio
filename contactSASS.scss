@@ -3,7 +3,7 @@
 @use "./partials/typography";
 
 body {
-	background: #323641;
+	background: palette.$bgPrim;
 }
 
 .contact__letter-image {

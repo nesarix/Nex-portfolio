@@ -1,10 +1,11 @@
 @use "./palette";
 
-@mixin bubble($backdrop-color, $size-width, $size-hight) {
+@mixin bubble($backdrop-color, $size-width, $size-hight, $border-color) {
 	background-color: $backdrop-color;
 	width: $size-width;
 	height: $size-hight;
 	border-radius: 25px;
+	border: 2px solid $border-color;
 }
 @mixin flex-big($disp: flex, $justify-c, $align-itm, $flex-dr, $flex-wr) {
 	display: $disp;
